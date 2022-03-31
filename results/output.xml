@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 5.0 (Python 3.9.12 on win32)" generated="20220331 14:43:21.531" rpa="false" schemaversion="3">
+<suite id="s1" name="Project2" source="D:\Robot\project2">
+<suite id="s1-s1" name="TestSuite1" source="D:\Robot\project2\TestSuite1.robot">
+<test id="s1-s1-t1" name="FirstTest" line="11">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${URL}</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220331 14:43:21.750" level="INFO">Opening browser 'chrome' to base url 'https://opensource-demo.orangehrmlive.com/'.</msg>
+<status status="PASS" starttime="20220331 14:43:21.750" endtime="20220331 14:43:26.512"/>
+</kw>
+<status status="PASS" starttime="20220331 14:43:21.734" endtime="20220331 14:43:26.512"/>
+</test>
+<status status="PASS" starttime="20220331 14:43:21.562" endtime="20220331 14:43:26.513"/>
+</suite>
+<status status="PASS" starttime="20220331 14:43:21.531" endtime="20220331 14:43:26.514"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Project2">Project2</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1" name="TestSuite1">Project2.TestSuite1</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
