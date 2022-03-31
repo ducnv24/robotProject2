@@ -1,17 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 5.0 (Python 3.9.12 on win32)" generated="20220331 15:05:11.352" rpa="false" schemaversion="3">
+<robot generator="Robot 5.0 (Python 3.9.12 on win32)" generated="20220331 16:23:23.541" rpa="false" schemaversion="3">
 <suite id="s1" name="TestSuite1" source="D:\Robot\project2\Tests\TestSuite1.robot">
-<test id="s1-t1" name="FirstTest" line="11">
+<test id="s1-t1" name="FirstTest" line="14">
 <kw name="Open Browser" library="SeleniumLibrary">
 <arg>${URL}</arg>
 <arg>chrome</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20220331 15:05:11.535" level="INFO">Opening browser 'chrome' to base url 'https://opensource-demo.orangehrmlive.com/'.</msg>
-<status status="PASS" starttime="20220331 15:05:11.535" endtime="20220331 15:05:18.899"/>
+<msg timestamp="20220331 16:23:23.728" level="INFO">Opening browser 'chrome' to base url 'https://opensource-demo.orangehrmlive.com/'.</msg>
+<status status="PASS" starttime="20220331 16:23:23.728" endtime="20220331 16:23:28.554"/>
 </kw>
-<status status="PASS" starttime="20220331 15:05:11.535" endtime="20220331 15:05:18.900"/>
+<kw name="Login">
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id:txtUsername</arg>
+<arg>${USERNAME}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220331 16:23:28.558" level="INFO">Typing text 'Admin' into text field 'id:txtUsername'.</msg>
+<status status="PASS" starttime="20220331 16:23:28.557" endtime="20220331 16:23:28.759"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id:txtPassword</arg>
+<arg>${PASSWORD}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220331 16:23:28.760" level="INFO">Typing text 'admin123' into text field 'id:txtPassword'.</msg>
+<status status="PASS" starttime="20220331 16:23:28.759" endtime="20220331 16:23:28.863"/>
+</kw>
+<kw name="Press Key" library="SeleniumLibrary">
+<arg>xpath=//body</arg>
+<arg>//13</arg>
+<doc>*DEPRECATED in SeleniumLibrary 4.0.* use `Press Keys` instead.</doc>
+<msg timestamp="20220331 16:23:28.863" level="WARN">Keyword 'SeleniumLibrary.Press Key' is deprecated. use `Press Keys` instead.</msg>
+<status status="PASS" starttime="20220331 16:23:28.863" endtime="20220331 16:23:28.931"/>
+</kw>
+<status status="PASS" starttime="20220331 16:23:28.556" endtime="20220331 16:23:28.932"/>
+</kw>
+<status status="PASS" starttime="20220331 16:23:23.728" endtime="20220331 16:23:28.932"/>
 </test>
-<status status="PASS" starttime="20220331 15:05:11.352" endtime="20220331 15:05:18.901"/>
+<status status="PASS" starttime="20220331 16:23:23.541" endtime="20220331 16:23:28.934"/>
 </suite>
 <statistics>
 <total>
@@ -24,5 +48,6 @@
 </suite>
 </statistics>
 <errors>
+<msg timestamp="20220331 16:23:28.863" level="WARN">Keyword 'SeleniumLibrary.Press Key' is deprecated. use `Press Keys` instead.</msg>
 </errors>
 </robot>

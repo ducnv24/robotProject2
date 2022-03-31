@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 5.0 (Python 3.9.12 on win32)" generated="20220331 16:27:56.264" rpa="false" schemaversion="3">
+<suite id="s1" name="Project2" source="D:\Robot\project2">
+<suite id="s1-s1" name="Tests" source="D:\Robot\project2\tests">
+<suite id="s1-s1-s1" name="TestSuite1" source="D:\Robot\project2\tests\TestSuite1.robot">
+<test id="s1-s1-s1-t1" name="FirstTest" line="14">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${URL}</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220331 16:27:56.451" level="INFO">Opening browser 'chrome' to base url 'https://opensource-demo.orangehrmlive.com/'.</msg>
+<status status="PASS" starttime="20220331 16:27:56.451" endtime="20220331 16:28:00.544"/>
+</kw>
+<kw name="Login">
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id:txtUsername</arg>
+<arg>${USERNAME}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220331 16:28:00.545" level="INFO">Typing text 'Admin' into text field 'id:txtUsername'.</msg>
+<status status="PASS" starttime="20220331 16:28:00.544" endtime="20220331 16:28:00.602"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id:txtPassword</arg>
+<arg>${PASSWORD}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220331 16:28:00.602" level="INFO">Typing text 'admin123' into text field 'id:txtPassword'.</msg>
+<status status="PASS" starttime="20220331 16:28:00.602" endtime="20220331 16:28:00.672"/>
+</kw>
+<kw name="Press Keys" library="SeleniumLibrary">
+<arg>id:txtPassword</arg>
+<arg>RETURN</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<msg timestamp="20220331 16:28:00.672" level="INFO">Sending key(s) ('RETURN',) to id:txtPassword element.</msg>
+<msg timestamp="20220331 16:28:00.977" level="INFO">Pressing special key RETURN to element.</msg>
+<msg timestamp="20220331 16:28:00.977" level="INFO">Releasing special key RETURN.</msg>
+<status status="PASS" starttime="20220331 16:28:00.672" endtime="20220331 16:28:02.450"/>
+</kw>
+<status status="PASS" starttime="20220331 16:28:00.544" endtime="20220331 16:28:02.451"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220331 16:28:04.459" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20220331 16:28:02.451" endtime="20220331 16:28:04.459"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20220331 16:28:04.459" endtime="20220331 16:28:06.605"/>
+</kw>
+<status status="PASS" starttime="20220331 16:27:56.451" endtime="20220331 16:28:06.605"/>
+</test>
+<status status="PASS" starttime="20220331 16:27:56.279" endtime="20220331 16:28:06.605"/>
+</suite>
+<status status="PASS" starttime="20220331 16:27:56.279" endtime="20220331 16:28:06.605"/>
+</suite>
+<status status="PASS" starttime="20220331 16:27:56.264" endtime="20220331 16:28:06.605"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Project2">Project2</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1" name="Tests">Project2.Tests</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1-s1" name="TestSuite1">Project2.Tests.TestSuite1</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
